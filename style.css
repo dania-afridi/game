@@ -20,12 +20,12 @@ h1{
 }
 h3{
     font-size: 1.75em;
-    padding: 1.25em;
+    padding: 0 1.25em 1.5em;
     font-weight: 900;
 }
 .container{
     background-color:white;
-    max-width: 1240px;
+    max-width: 1200px;
     margin: 0 auto;
     text-align: center;
 }
@@ -40,9 +40,12 @@ h3{
     padding: 0.5em;
 }
 .rules{
+    font-family: 'DynaPuff';
     color: #1A498F;
     font-weight: 500;
-    padding: 2em 1em .5em;
+    padding: 1em 2.5em 0;
+    word-spacing: 2mm;
+    line-height: .4in;
 }
 .instruction{
     font-family: 'Inknut Antiqua', serif;
@@ -55,7 +58,10 @@ h3{
     align-items: center;
     align-content: center;
 }
-
+.game-ground > div{
+    flex: auto;
+    padding: 1em;
+}
 .images{
     display: flex;
     justify-content: center;
@@ -63,7 +69,7 @@ h3{
     margin: auto;
     width: 45%;
     gap: 1em;
-    padding: 1em 2em 1.5em;
+    padding: 1em 2em;
 }
 img{
     width: 60%;
@@ -73,12 +79,11 @@ img{
     border: 1px solid saddlebrown;
 
 }
-.game-ground > div{
-    flex: auto;
+.points{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2em;
+    font-weight: 500;
     padding: 1em;
-}
-.result{
-    padding: 2em;
 }
 footer{
     background-color: beige;
