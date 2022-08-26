@@ -1,5 +1,86 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aboreto:wght@400;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;500&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+body{
+    background-color: #1A498F;
+    font-family: 'Aboreto', cursive;
+    font-size: 1.25em;
+}
+h1{
+    font-size: 4em;
+    font-weight: 400;
+}
+h3{
+    font-size: 1.75em;
+    padding: 1.25em;
+    font-weight: 900;
+}
+.container{
+    background-color:white;
+    max-width: 1240px;
+    margin: 0 auto;
+    text-align: center;
+}
+.game-name{
+    font-family: 'DynaPuff', cursive;
+    background-color: beige;
+    padding:1em 1.2em .8em;
+}
+.players{
+    font-family: 'Aboreto', cursive;
+    font-size: 2em;
+    padding: 0.5em;
+}
+.rules{
+    color: #1A498F;
+    font-weight: 500;
+    padding: 2em 1em .5em;
+}
+.instruction{
+    font-family: 'Inknut Antiqua', serif;
+    font-size: 1.5em;
+    color: saddlebrown;
+}
+.game-ground{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+
+.images{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+    width: 45%;
+    gap: 1em;
+    padding: 1em 2em 1.5em;
+}
+img{
+    width: 60%;
+    flex-grow: 1;
+    flex-shrink: 2;
+    flex-basis: auto;
+    border: 1px solid saddlebrown;
+
+}
+.game-ground > div{
+    flex: auto;
+    padding: 1em;
+}
+.result{
+    padding: 2em;
+}
+footer{
+    background-color: beige;
+    padding: 1.5em;
 }

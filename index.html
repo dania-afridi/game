@@ -9,25 +9,37 @@
 </head>
 <body>
     <div class="container">
-        <h1 class="game-name">ROCK PAPER SCISSORS</h1>
-        <h2 class="players">Human VS Computer</h2>
-        <section class="selection-area">
+        <div class="game-name">
+            <h1>ROCK - PAPER - SCISSORS</h1>
+            <h2 class="players">Human VS Computer</h2>
+        </div>
+        <p class="rules" id="rules">herer</p>
+        <p class="instruction">choose your weapon to defeat !</p>
+        <section class="game-ground">
             <div class="human">
                 <h3>Player</h3>
-                <img src="" alt="rock image">
-                <img src="" alt="paper image">
-                <img src="" alt="scissor image">
+                <div class="images">
+                    <img src="./images/rock.jpg" alt="rock image">
+                    <img src="./images/paper.jpg" alt="paper image">
+                    <img src="./images/scissor.jpg" alt="scissor image">
+                </div>
+                <p class="points">0</p>
             </div>
             <div class="computer">
                 <h3>Computer</h3>
-                <img src="" alt="rock image">
-                <img src="" alt="paper image">
-                <img src="" alt="scissor image">
+                <div class="images">
+                    <img src="./images/rock.jpg" alt="rock image">
+                    <img src="./images/paper.jpg" alt="paper image">
+                    <img src="./images/scissor.jpg" alt="scissor image">
+                </div>
+                <p class="points">0</p>
             </div>
         </section>
         <section class="game-status">
             <h3>WHO WON</h3>
+            <p id="result">result: </p>
         </section>
+        <footer>@Game Design by Dania</footer>
     </div>
     <script src="./index.js"></script>
 </body>
