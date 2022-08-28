@@ -65,13 +65,13 @@ function gameReplay(){
 function Comparison(){
     console.log("this is comparison function")
     if(computerSelection === playerSelection){
-        seclectedTools.innerHTML = `<img src="./images/${computerSelection}.jpg">`
+        seclectedTools.innerHTML = `<img class="tool" src="./images/${computerSelection}.jpg">`
         result.innerHTML = "game-tie"
     }else if((computerSelection === "rock" && playerSelection === "scissor") || (computerSelection === "paper" && playerSelection === "rock") || (computerSelection === "scissor" && playerSelection === "paper")){
         console.log("computer won")
         count1++
         computerPoints.innerHTML = count1;
-        seclectedTools.innerHTML = `<img src="./images/${playerSelection}.jpg"><img src="./images/${computerSelection}.jpg">`
+        seclectedTools.innerHTML = `<img src="./images/${playerSelection}.jpg" class="tool"><img src="./images/${computerSelection}.jpg" class="tool">`
         result.innerHTML = "computer won"
         if(count1 === 5){
             start = false;
@@ -84,7 +84,7 @@ function Comparison(){
         console.log("player won")
         count2++
         playerPoints.innerHTML = count2;
-        seclectedTools.innerHTML = `<img src="./images/${playerSelection}.jpg"><img src="./images/${computerSelection}.jpg">`
+        seclectedTools.innerHTML = `<img src="./images/${playerSelection}.jpg" class="tool"><img src="./images/${computerSelection}.jpg" class="tool">`
         result.innerHTML = "player won"
         if(count2 === 5){
             start = false;
