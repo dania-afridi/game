@@ -26,6 +26,7 @@ button{
     justify-content: center;
     margin: 3.5em auto;
     padding: .5em;
+    cursor: pointer;
 }
 
 h1{
@@ -37,7 +38,7 @@ h3{
     padding: 0 1.2em 1em;
     font-weight: 900;
 }
-.container{
+#game-container{
     background-color:white;
     max-width: 1200px;
     margin: 0 auto;
@@ -54,7 +55,7 @@ h3{
     font-size: 2em;
     padding: 0.5em;
 }
-.rules{
+#rules{
     font-family: 'DynaPuff';
     font-size: 3em;
     color:white;
@@ -97,6 +98,9 @@ img{
     flex-shrink: 1;
     flex-basis: auto;
     border: 1px solid saddlebrown;
+}
+
+#rock, #paper, #scissor{
     cursor: pointer;
 }
 .points{
@@ -104,6 +108,18 @@ img{
     font-size: 2em;
     font-weight: 500;
     padding: 1em;
+}
+#replay{
+    margin: 0;
+    margin-left:78%;
+    font-size: 1.4em;
+    text-align: center;
+    margin-bottom: .2em;
+    border-color:#1A498F;
+    color: #1A498F;
+    background-color: white;
+    font-weight: bold;
+    display: none;
 }
 footer{
     background-color: beige;
