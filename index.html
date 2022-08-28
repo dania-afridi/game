@@ -8,7 +8,11 @@
     <title>Rock Paper Scissors</title>
 </head>
 <body>
-    <button id="start-btn" onclick=startGame()>Start Game</button>
+    <div class="start" id="start">
+        <h1 >ROCK - PAPER - SCISSORS</h1>
+        <button onclick=startGame()>Start Game</button>
+    </div>
+    
     <p id="rules">DEAR PLAYER ! <br> You have chances to defeat untill you will beat 5 battles first. If you got defeated by 5 times first you will lost the battle.</p>
     <div id="game-container">
         <div class="game-name">
@@ -26,6 +30,7 @@
                     <img src="./images/scissor.jpg" alt="scissor image" id="scissor">
                 </div>
                 <p class="points" id="player-points">0</p>
+                <div id="player-tool"></div>
             </div>
             <div class="computer">
                 <h3>Computer</h3>
@@ -35,12 +40,11 @@
                     <img src="./images/scissor.jpg" alt="scissor image">
                 </div>
                 <p class="points" id="computer-points">0</p>
+                <div id="computer-tool"></div>
             </div>
         </section>
 
         <section id="game-status">
-            <div id="selected-tools">
-            </div>
             <h3 id="result">Game Status</h3>
             <button id="replay" onclick = gameReplay()>Replay</button>
         </section>

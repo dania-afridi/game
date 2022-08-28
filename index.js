@@ -1,7 +1,7 @@
 
 const rulesPara = document.getElementById("rules");
 const instruct = document.getElementById("instruct");
-const startBtn = document.getElementById("start-btn");
+const startBtn = document.getElementById("start");
 const gameContainer = document.getElementById("game-container");
 
 const rock = document.getElementById("rock");
@@ -10,7 +10,9 @@ const scissor = document.getElementById("scissor");
 
 const playerPoints = document.getElementById("player-points");
 const computerPoints = document.getElementById("computer-points");
-const seclectedTools = document.getElementById("selected-tools")
+
+const computerTool = document.getElementById("computer-tool");
+const playerTool = document.getElementById("player-tool")
 
 const result = document.getElementById("result");
 const replay = document.getElementById("replay");
@@ -28,7 +30,7 @@ function startGame(){
     console.log("game started");
     startBtn.style.display= "none";
     rulesPara.style.display= "block";
-    setTimeout(gameContainerDisplay, 6000);
+    setTimeout(gameContainerDisplay, 5000);
     start = true;
 }
 
@@ -59,38 +61,42 @@ function gameReplay(){
     playerPoints.innerHTML = count2;
     result.innerHTML = "Game Status";
     start = true;
+    computerTool.innerHTML = ""
+    playerTool.innerHTML = ""
 
 }
 
 function Comparison(){
     console.log("this is comparison function")
     if(computerSelection === playerSelection){
-        seclectedTools.innerHTML = `<img class="tool" src="./images/${computerSelection}.jpg">`
+        computerTool.innerHTML = `<img class="tool" src="./images/${computerSelection}.jpg">`
+        playerTool.innerHTML = `<img class="tool" src="./images/${playerSelection}.jpg">`
         result.innerHTML = "game-tie"
     }else if((computerSelection === "rock" && playerSelection === "scissor") || (computerSelection === "paper" && playerSelection === "rock") || (computerSelection === "scissor" && playerSelection === "paper")){
         console.log("computer won")
         count1++
         computerPoints.innerHTML = count1;
-        seclectedTools.innerHTML = `<img src="./images/${playerSelection}.jpg" class="tool"><img src="./images/${computerSelection}.jpg" class="tool">`
-        result.innerHTML = "computer won"
+        computerTool.innerHTML = `<img class="tool" src="./images/${computerSelection}.jpg">`
+        playerTool.innerHTML = `<img class="tool" src="./images/${playerSelection}.jpg">`
+        result.innerHTML = "computer won";
+
         if(count1 === 5){
             start = false;
             instruct.style.display = "none";
             replay.style.display ="block";
-            seclectedTools.style.display = "none"
             result.innerHTML = "Sorry! You have lost the battle."
         }
     }else if((computerSelection === "rock" && playerSelection === "paper") || (computerSelection === "paper" && playerSelection === "scissor") || (computerSelection === "scissor" && playerSelection === "rock")){
         console.log("player won")
         count2++
         playerPoints.innerHTML = count2;
-        seclectedTools.innerHTML = `<img src="./images/${playerSelection}.jpg" class="tool"><img src="./images/${computerSelection}.jpg" class="tool">`
+        computerTool.innerHTML = `<img class="tool" src="./images/${computerSelection}.jpg">`
+        playerTool.innerHTML = `<img class="tool" src="./images/${playerSelection}.jpg">`
         result.innerHTML = "player won"
         if(count2 === 5){
             start = false;
             instruct.style.display = "none";
             replay.style.display ="block";
-            seclectedTools.style.display = "none"
             result.innerHTML = "congragulation! you have won the battle."
         }
     }

@@ -14,7 +14,12 @@ body{
     font-family: 'Aboreto', cursive;
     font-size: 1.25em;
 }
-
+.start h1 {
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    margin:3em auto 1.25em;
+}
 button{
     font-size: 5em;
     background-color: #1A498F;
@@ -24,7 +29,7 @@ button{
     text-align: center;
     display: flex;
     justify-content: center;
-    margin: 3.5em auto;
+    margin: 0 auto 3em;
     padding: .5em;
     cursor: pointer;
 }
@@ -37,6 +42,7 @@ h3{
     font-size: 1.75em;
     padding: 0 1.2em 1em;
     font-weight: 900;
+    margin-top: 0;
 }
 #game-container{
     background-color:white;
@@ -74,12 +80,11 @@ h3{
 .game-ground{
     display: flex;
     justify-content: space-around;
-    align-items: center;
     align-content: center;
     padding: 2em;
 }
 .game-ground > div{
-    flex: auto;
+    flex: 1 1 auto;
     padding: 1em;
 }
 .images{
@@ -94,9 +99,7 @@ h3{
 }
 img{
     width: 35%;
-    flex-grow: 1;
-    flex-shrink: 1;
-    flex-basis: auto;
+    flex: 1 1 auto;
     border: 1px solid saddlebrown;
 }
 
@@ -108,6 +111,20 @@ img{
     font-size: 2em;
     font-weight: 500;
     padding: 1em;
+}
+#game-status{
+    margin-top: 0;
+    padding-top: 0;
+}
+#selected-tools{
+    max-width: 400px;
+    margin: 0 auto;
+    padding-top: 0;
+}
+.tool{
+    border: none;
+    padding: 0 1em;
+    margin-top: 0;
 }
 #replay{
     margin: 0;
