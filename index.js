@@ -77,6 +77,7 @@ function Comparison(){
             start = false;
             instruct.style.display = "none";
             replay.style.display ="block";
+            seclectedTools.style.display = "none"
             result.innerHTML = "Sorry! You have lost the battle."
         }
     }else if((computerSelection === "rock" && playerSelection === "paper") || (computerSelection === "paper" && playerSelection === "scissor") || (computerSelection === "scissor" && playerSelection === "rock")){
@@ -89,6 +90,7 @@ function Comparison(){
             start = false;
             instruct.style.display = "none";
             replay.style.display ="block";
+            seclectedTools.style.display = "none"
             result.innerHTML = "congragulation! you have won the battle."
         }
     }
