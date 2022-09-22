@@ -47,7 +47,8 @@ h3{
 #game-container{
     background-color:white;
     max-width: 1200px;
-    margin: 0 auto;
+    height:950px;
+    margin: auto;
     text-align: center;
     display: none;
 }
@@ -77,13 +78,14 @@ h3{
     font-size: 1.5em;
     color:#1A498F;
 }
-.game-ground{
+.score--board{
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     align-content: center;
     padding: 2em;
 }
-.game-ground > div{
+.score--board > div{
     flex: 1 1 auto;
     padding: 1em;
 }
@@ -91,14 +93,14 @@ h3{
     display: flex;
     justify-content: center;
     align-content: center;
-    margin: auto;
-    width: 80%;
+    margin:1em auto;
+    width: 50%;
     gap: 1em;
     padding: 1em 2em;
     background-color: #1A498F;
 }
 img{
-    width: 35%;
+    width: 30%;
     flex: 1 1 auto;
     border: 1px solid saddlebrown;
 }
@@ -108,7 +110,7 @@ img{
 }
 .points{
     font-family: 'Courier New', Courier, monospace;
-    font-size: 2em;
+    font-size: 1em;
     font-weight: 500;
     padding: 1em;
 }
@@ -138,7 +140,7 @@ img{
     font-weight: bold;
     display: none;
 }
-footer{
+/* footer{
     background-color: beige;
     padding: 2em;
-}
+} */
