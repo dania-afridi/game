@@ -21,16 +21,23 @@
         </div>
         
         <p class="instruction" id="instruct">choose your weapon to defeat !</p>
-        <section class="game-ground">
-            <div class="human">
-                <h3>Player</h3>
+        <section>
+            <div>
                 <div class="images">
                     <img src="./images/rock.jpg" alt="rock image" id="rock">
                     <img src="./images/paper.jpg" alt="paper image" id="paper">
                     <img src="./images/scissor.jpg" alt="scissor image" id="scissor">
                 </div>
-                <p class="points" id="player-points">0</p>
-                <div id="player-tool"></div>
+            </div>
+            <div class="score--board">
+                <div>
+                    <p class="points"> Player points: <span id="player-points">0</span></p>
+                    <div id="player-tool"></div>
+                </div>
+                <div>
+                    <p class="points"> Computer points: <span id="computer-points">0</span></p>
+                    <div id="computer-tool"></div>
+                </div>
             </div>
         </section>
 
@@ -38,7 +45,7 @@
             <h3 id="result">Game Status</h3>
             <button id="replay" onclick = gameReplay()>Replay</button>
         </section>
-        <footer>@Game Design by Dania</footer>
+<!--         <footer>@Game Design by Dania</footer> -->
     </div>
     <script src="./index.js"></script>
 </body>
